@@ -1,0 +1,21 @@
+.list-item {
+  text-align: left;
+  transition: 0.3s;
+}
+
+.list-item:hover {
+  transform: scale(1.08);
+}
+
+.list-item a {
+  color: black;
+  text-decoration: none;
+}
+
+.list-item p {
+  color: rgb(68, 68, 68);
+}
+
+.list-item img {
+  border-radius: 10%;
+}

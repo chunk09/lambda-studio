@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap");
+
+body {
+  background-color: rgb(47, 47, 47);
+  color: white;
+}
+
+div {
+  text-align: center;
+}
+
+.profile {
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("https://images.unsplash.com/photo-1594621544535-1373ff8388b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eSUyMG5pZ2h0JTIwdmlld3xlbnwwfHwwfHw%3D&w=1000&q=80");
+  background-size: cover;
+  image-rendering: -moz-crisp-edges; /* firefox */
+  image-rendering: -o-crisp-edges; /* opera */
+  image-rendering: -webkit-optimize-contrast; /* chrome */
+  image-rendering: crisp-edges;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  margin-bottom: -2%;
+}
+
+.profile h1 {
+  background: linear-gradient(to right, #f140d3, #f67266);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.project {
+  background: linear-gradient(to top, antiquewhite 85%, #2b2b2b);
+  color: black;
+}
+
+.project h1 {
+  padding-top: 5%;
+  font-size: 3rem;
+}
+
+.button-container a button:first-child {
+  border: none;
+  min-width: 10%;
+  min-height: 5.5vh;
+  border-radius: 16px;
+  background-color: #2b2b2b;
+  font-size: 1rem;
+  color: white;
+  margin-right: 1%;
+  transition: 0.3s;
+}
+
+.button-container a button:first-child:hover {
+  transform: scale(1.2);
+}
+
+.button-container button:last-child {
+  border: 1.5px solid #2b2b2b;
+  min-width: 10%;
+  min-height: 5.5vh;
+  border-radius: 16px;
+  background-color: transparent;
+  font-size: 1rem;
+  color: black;
+  margin-left: 1%;
+  transition: 0.3s;
+}
+
+.button-container button:last-child:hover {
+  transform: scale(1.2);
+}
+
+.button-container {
+  margin-top: 0;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.project-container {
+  margin-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: 30%;
+  margin-left: 30%;
+  padding-bottom: 10%;
+}
+
+.project-container div {
+  margin: 2%;
+}
+
+.introduce-line {
+  background-color: rgb(47, 47, 47);
+  padding-bottom: 10%;
+  --section-gap: calc(24px);
+  --gradient-padding: 30px;
+  --gradient-title-margin: 100px;
+  --section-angle-sin: 0.212;
+  --section-skew-Y: -5deg;
+  --transform-origin-x: calc(var(--section-gap) * 0.8);
+  will-change: auto;
+  transform-origin: var(--transform-origin-x);
+  transform: skewY(var(--section-skew-Y));
+}
+
+.introduce {
+  padding-bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.introduce div {
+  width: 50%;
+  background-color: #181818;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px 5px rgb(33, 33, 33);
+}
+
+.introduce div p {
+  margin-left: 3%;
+  font-size: 1.05rem;
+  font-style: italic;
+}
+
+.introduce div img {
+  border: 2px solid white;
+}
+
+.introduce div:hover {
+  transform: scale(1.05);
+}
+
+.service-update {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+  color: black;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+
+.update-list {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  max-height: 50vh;
+  overflow: auto;
+  background-color: rgb(47, 47, 47);
+  color: white;
+  border: 2px solid #2b2b2b;
+  border-radius: 30px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.update-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
